@@ -1,0 +1,19 @@
+mikf sum() -> int of (int[] a) {
+    int i = 0
+    int res = 0
+    while i < a.size {
+        res = res + a[i]
+        i = i + 1
+    }
+}
+
+// allows this syntax
+int a[2]
+a[0] = 1
+a[1] = 1
+
+int sum_of_arr = a.sum()
+
+if sum == 2 {
+    puts("Success!")
+}

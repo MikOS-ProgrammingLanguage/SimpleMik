@@ -1,0 +1,10 @@
+mikf __noret__ putchar(int c) -> int
+
+chr base = 'A'
+
+// print the alphabet
+int i = 0
+while i < 26 {
+    putchar(base+i)
+    i = i + 1
+}

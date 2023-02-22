@@ -1,0 +1,36 @@
+# PRIORITIZE
+- arrays as function arguments don't work
+    Get the pointer of the beginning of the array and pass it to the function
+    Inside the function this value will now be treated as a pointer. Which doesn't change the produced code
+- string arrays don't work
+
+- rework structs
+- arrays in structs can only have a fixed size. With no size. It's gonna default to 0
+
+- add "..." in functions for any arguments
+- implement void, long, immut, ... in llvm
+
+# Ideas
+- arrays should have a resize method -> simply copy the array into a new array with size + 1 using memcpy
+- arrays should have a size method which is known all the time cause we keep track because the only way to increment an array are increment operators (this functions is the macro size, which on arrays, returns their size)
+- operator overloading with this syntax
+    ``overload (<operator>, <type>) with (a, b) {/* has to return a <type> */}``
+- '?' will give you the type of any variable. It can be used for function pointer. Or to get the type of any variable like so: int x; ?x y;
+- const and immut are different. Immut can depend on a non constant variable. Constant cannot
+- macros (referenced by #name())
+- allow the programmer to define custom typecast functions for their own data types
+    Syntax: ``typecast (<custom_type>) with (<custom_type>, <to_type>) {/*body of the conversion function. Has to return <to_type>*/}``
+- also "@replace NAME -> 10" should be added as a preprocessor directive
+- custom functions for structs.
+    Syntax``mikf name(args) of (<type><name>) -> <any_type>{}``
+    This syntax will let you reference the type this operation is performed on with the specified name in the of argument
+
+# General Todo
+- structs
+- add attributes. Like in c. But with another simpler syntax
+
+# Optimizations
+- estimate change in big O notation
+- estimate big O notation on compile time via the O() flag
+
+# when finished with bare-bone shit and bugfixes. rewrite again and do it smarter. For example. Structs should get IDs so you dont have to use reflect to get their type.

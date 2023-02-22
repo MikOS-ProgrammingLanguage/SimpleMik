@@ -1,0 +1,6 @@
+flt i = 20.5 + 5.6
+
+global flt gi
+global flt gii = 10.5
+
+flt iiii = 10.5 + 10.5 + 10.6

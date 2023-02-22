@@ -1,0 +1,5 @@
+mikf test_no_args_void()
+mikf test_args_void(int i, int j)
+
+mikf test_no_args_return() -> int
+mikf test_args_return(int i, int j) -> int

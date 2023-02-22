@@ -1,0 +1,20 @@
+/*mikf __noret__ putchar(int char) -> int
+
+int i[5]
+i[0] = 'A'
+
+int j = i[0]
+putchar(j)
+putchar(10)
+
+int i2[5][5]
+int i5[5]
+i2[0][0] = 'A'
+
+int j2 = i2[0][0]
+putchar(j2)
+*/
+
+mikf to_char_arr(int arr[]) -> int {
+    return 1
+}

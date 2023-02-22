@@ -1,0 +1,2 @@
+mikf kill(int pid, int sig) -> void
+kill(1, 4)

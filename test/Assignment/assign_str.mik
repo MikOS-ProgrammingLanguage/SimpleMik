@@ -1,0 +1,2 @@
+str s = "Hello World!"
+//str s2 = s + s // invalid

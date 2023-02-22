@@ -1,0 +1,10 @@
+mikf my_func(int i, int j) -> int {
+    int c = 0
+    c = i * j
+    return c
+}
+
+mikf my_func2(int i, int a) -> int {
+    int c = i + a
+    return c
+}

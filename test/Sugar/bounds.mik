@@ -1,0 +1,8 @@
+int i{0, 10, keep} = 5 // if i is lower than 0 it will roll around back to 10 and vice verca
+int j{0, 10, roll} = 5  // if j is lower than 0 it remains as 0
+
+j = 11
+
+if j == 0 {
+    puts("Hello, world")
+}
